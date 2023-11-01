@@ -25,5 +25,17 @@ public class User {
 	 List<User> team;
 	 
 	 @ManyToMany
-	 List<Role> roles;	 
+	 List<Role> roles;
+
+	public void setName(String name) {
+		this.name = name;
+		
+	}
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}	 
 }

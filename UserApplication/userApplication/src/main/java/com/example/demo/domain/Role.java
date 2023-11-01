@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 
 @Entity
 public class Role {
-//	id, role, rank 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

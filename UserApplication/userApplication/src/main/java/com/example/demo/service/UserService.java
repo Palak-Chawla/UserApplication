@@ -5,6 +5,8 @@ import com.example.demo.domain.User;
 import com.example.demo.dto.UserDto;
 
 public interface UserService {
-	Map<String,Object> createUser(UserDto dto);
+	User createUser(UserDto dto);
 	User getUserById(long id);
+	User editUser(UserDto dto);
+	boolean deleteUser(Long id);
 }
